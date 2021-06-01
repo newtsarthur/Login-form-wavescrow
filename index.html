@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Login form wavescrow</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="img/jpg" href="https://steamuserimages-a.akamaihd.net/ugc/925919905791817402/CEE8C7C38A2284BA4C44ACC7C41F507937D2ADDD/"></link>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="user signinBx">
+                <div class="imgBx">
+                    <img src="https://i.pinimg.com/originals/3e/78/37/3e78371bc2c6cc0c87d2f42f3de5e29a.jpg">
+                    <!-- <img src="./img/login.png"> -->
+                </div>
+                <div class="formBx">
+                    <form>
+                        <h2>Sign In</h2>
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="Password">
+                        <input type="submit" value="Login">
+                        <p class="signup">Don't have an account?<a href="#" onclick="toggleForm();">Sign up.</a></p>
+                    </form>
+                </div>
+            </div>
+            <div class="user signupBx">
+                <div class="formBx">
+                    <form>
+                        <h2>Create an account</h2>
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email Address">
+                        <input type="password" placeholder="Create Password">
+                        <input type="password" placeholder="Confirm Password">
+                        <input type="submit" value="Sign Up">
+                        <p class="signup">Already have an account?<a href="#" onclick="toggleForm();">Sign in.</a></p>
+                    </form>
+                </div>
+                <div class="imgBx">
+                    <img src="https://i.pinimg.com/originals/f3/26/db/f326db73a47a8018539ea2aa3b8a48e9.jpg">
+                    <!-- <img src="./img/create.png"> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function toggleForm(){
+            container = document.querySelector('.container');
+            container.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
